@@ -1,130 +1,91 @@
 # 🚗 Universo Vistorias — Landing Page
 
-Landing page moderna e responsiva para o **Universo Vistorias**, centro de vistoria veicular credenciado ao Detran-DF, localizado em Brasília - DF.
+Landing page moderna, responsiva e otimizada para conversão da **Universo Vistorias**, centro de vistoria veicular credenciado ao Detran-DF, localizado em Brasília.
 
 ---
 
-## 🌟 Sobre o Projeto
+## 📸 Preview
 
-Site institucional desenvolvido para captar clientes interessados em serviços de vistoria automotiva no Distrito Federal, transmitindo confiança, credibilidade e profissionalismo.
-
----
-
-## ✨ Funcionalidades
-
-- ✅ Design premium dark com identidade visual dourada
-- ✅ Header fixo com efeito transparente ao rolar
-- ✅ Hero section com parallax suave
-- ✅ Animações de entrada ao rolar a página (Scroll Reveal)
-- ✅ Contador animado de estatísticas
-- ✅ Cards de serviços com hover animado
-- ✅ Galeria de imagens com zoom suave
-- ✅ Seção de contato com Google Maps incorporado
-- ✅ Botão flutuante de WhatsApp
-- ✅ Menu hamburguer responsivo para mobile
-- ✅ Footer com redes sociais e link para o Detran-DF
-- ✅ SEO básico com meta tags e Open Graph
-
----
-
-## 🗂️ Estrutura de Pastas
-
-```
-universo-vistorias/
-├── index.html          # Página principal
-├── css/
-│   └── styles.css      # Estilos principais
-├── js/
-│   └── main.js         # Scripts e animações
-├── images/
-│   └── logo.png        # Logo da empresa
-└── README.md           # Este arquivo
-```
-
----
-
-## 🎨 Identidade Visual
-
-| Cor              | Hex       | Uso                          |
-|-----------------|-----------|------------------------------|
-| Amarelo Ouro     | `#FFD700` | Cor primária / destaques     |
-| Ouro Escuro      | `#C8AA5F` | Gradientes e detalhes        |
-| Preto            | `#111111` | Fundo principal              |
-| Cinza Escuro     | `#666666` | Textos secundários           |
-| Cinza Claro      | `#DDDDDD` | Textos e bordas              |
-| Branco           | `#FFFFFF` | Textos principais            |
-
-**Fontes utilizadas (Google Fonts):**
-- `Bebas Neue` — Títulos e display
-- `Barlow Condensed` — Subtítulos e badges
-- `Barlow` — Corpo do texto
+> Design em tema escuro com identidade amarelo & preto, animações suaves e layout premium.
 
 ---
 
 ## 🛠️ Tecnologias
 
-- **HTML5** — Estrutura semântica e acessível
-- **CSS3** — Variáveis, Grid, Flexbox, animações
-- **JavaScript Vanilla** — Sem dependências externas
-- **Google Fonts** — Tipografia moderna
-- **Google Maps Embed** — Localização integrada
+- **HTML5** — semântico e acessível
+- **CSS3** — variáveis, grid, animações, responsividade
+- **JavaScript** — vanilla, sem dependências
+- **Font Awesome 6** — ícones
+- **Google Fonts** — Bebas Neue + Barlow
 
 ---
 
-## 🚀 Como Usar
+## 📁 Estrutura do Projeto
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/universo-vistorias.git
-   ```
-
-2. Abra o arquivo `index.html` no navegador ou use um servidor local:
-   ```bash
-   npx serve .
-   # ou
-   python -m http.server 8000
-   ```
-
-3. Para personalizar, edite:
-   - `index.html` — Conteúdo e estrutura
-   - `css/styles.css` — Estilos e cores
-   - `js/main.js` — Comportamentos e animações
-
----
-
-## 📞 Configuração de Contato
-
-Antes de publicar, atualize os links de WhatsApp no `index.html`:
-
-```html
-<!-- Substitua o número pelo número real -->
-href="https://wa.me/55XXXXXXXXXXX?text=Mensagem aqui"
 ```
-
-E o Instagram:
-```html
-href="https://instagram.com/seu_usuario"
+universo-vistorias/
+│
+├── index.html                  # Página principal
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css           # Todos os estilos
+│   ├── js/
+│   │   └── main.js             # Scripts e interações
+│   └── images/
+│       └── logo.jpg            # Logo da empresa
+│
+└── README.md
 ```
 
 ---
 
-## 📍 Localização
+## ✨ Funcionalidades
 
-> Setor SMSE Conjunto 03 Lote 4A — Samambaia Sul, Brasília - DF  
-> CEP: 72310-203
-
----
-
-## 🏛️ Credenciamento
-
-Empresa credenciada ao **Detran-DF** — [portal.detran.df.gov.br](https://portal.detran.df.gov.br/#/home)
-
----
-
-## 👨‍💻 Desenvolvido por
-
-**BRIAM Lab's** — Desenvolvimento Web Profissional
+- ✅ Navbar fixa com efeito de scroll
+- ✅ Menu hamburguer para mobile
+- ✅ Hero com animação de grade e silhueta SVG
+- ✅ Faixa marquee animada com diferenciais
+- ✅ Seção Sobre com cards informativos
+- ✅ Cards de Serviços com hover animado
+- ✅ Galeria em grid assimétrico
+- ✅ Seção de Contato com Google Maps
+- ✅ Botão flutuante de WhatsApp
+- ✅ Animações de scroll reveal
+- ✅ Contadores animados
+- ✅ 100% responsivo (mobile, tablet, desktop)
 
 ---
 
-*© 2026 Universo Vistorias — Todos os direitos reservados.*
+## 🎨 Identidade Visual
+
+| Cor | Hex |
+|-----|-----|
+| Amarelo | `#FFC107` |
+| Preto | `#0D0D0D` |
+| Cinza escuro | `#1A1A1A` |
+| Cinza médio | `#3A3A3A` |
+| Cinza claro | `#F5F5F5` |
+
+---
+
+## 🚀 Como usar
+
+1. Clone ou baixe o repositório
+2. Atualize o número de WhatsApp em `index.html` e `assets/js/main.js`
+3. Substitua `assets/images/logo.jpg` pela logo final em alta resolução
+4. Abra `index.html` no navegador — pronto!
+
+> Nenhuma dependência para instalar. Funciona diretamente no navegador.
+
+---
+
+## 📍 Empresa
+
+**Universo Vistorias**
+Setor SMSE Conjunto 03 Lote 4A — Samambaia Sul, Brasília – DF
+CEP 72310-203 · Credenciada ao Detran-DF
+
+---
+
+© 2026 Universo Vistorias
