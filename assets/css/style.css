@@ -1,22 +1,22 @@
 /* ============================================================
-   UNIVERSO VISTORIAS — style.css
-   Estrutura:
-   1. Variáveis & Reset
-   2. Scrollbar
-   3. Navbar
-   4. Mobile Menu
-   5. Hero Section
-   6. Seção Comum (labels, títulos)
-   7. Sobre
-   8. Serviços
-   9. Galeria
-   10. Contato
-   11. Faixa Credenciais
-   12. Footer
-   13. Floating WhatsApp
-   14. Animações & Reveal
-   15. Responsividade
-   ============================================================ */
+  UNIVERSO VISTORIAS — style.css
+  Estrutura:
+  1. Variáveis & Reset
+  2. Scrollbar
+  3. Navbar
+  4. Mobile Menu
+  5. Hero Section
+  6. Seção Comum (labels, títulos)
+  7. Sobre
+  8. Galeria
+  9. Serviços
+  10. Contato
+  11. Faixa Credenciais
+  12. Footer
+  13. Floating WhatsApp
+  14. Animações & Reveal
+  15. Responsividade
+  ============================================================ */
 
 /* ── 1. VARIÁVEIS & RESET ── */
 :root {
@@ -91,22 +91,10 @@ body {
 }
 
 .logo img {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
   object-fit: cover;
-}
-
-.logo-text {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.6rem;
-  color: var(--white);
-  letter-spacing: 1px;
-  line-height: 1;
-}
-
-.logo-text span {
-  color: var(--yellow);
 }
 
 .nav-links {
@@ -279,33 +267,11 @@ body {
   background: radial-gradient(ellipse at 60% 50%, rgba(255, 193, 7, 0.12) 0%, transparent 70%);
 }
 
-.hero-car {
-  position: absolute;
-  right: -60px;
-  bottom: 0;
-  width: 55vw;
-  max-width: 780px;
-  opacity: 0.07;
-  z-index: 1;
-  animation: carFloat 8s ease-in-out infinite;
-}
-
-@keyframes carFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-18px);
-  }
-}
-
 .hero-content {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 160px 5% 100px;
-  max-width: 860px;
+  padding: 100px 4%;
 }
 
 .hero-badge {
@@ -330,7 +296,6 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(3rem, 7vw, 6.5rem);
   line-height: 0.95;
-  letter-spacing: -1px;
   margin-bottom: 24px;
   opacity: 0;
   animation: fadeUp 0.8s 0.5s ease forwards;
@@ -339,22 +304,6 @@ body {
 .hero-title em {
   font-style: normal;
   color: var(--yellow);
-}
-
-.hero-title .outline {
-  -webkit-text-stroke: 2px var(--yellow);
-  color: transparent;
-}
-
-.hero-sub {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
-  max-width: 640px;
-  margin: 0 auto 42px;
-  line-height: 1.7;
-  opacity: 0;
-  animation: fadeUp 0.8s 0.8s ease forwards;
 }
 
 .hero-buttons {
@@ -417,8 +366,8 @@ body {
   z-index: 2;
   display: flex;
   justify-content: center;
-  gap: 60px;
-  padding: 0 5% 80px;
+  gap: 50px;
+  padding: 0 5% 60px;
   flex-wrap: wrap;
   opacity: 0;
   animation: fadeUp 0.8s 1.4s ease forwards;
@@ -535,117 +484,7 @@ section {
   line-height: 1.6;
 }
 
-/* ── 8. SERVIÇOS ── */
-#servicos {
-  background: var(--black);
-}
-
-.servicos-header {
-  text-align: center;
-  margin-bottom: 60px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.servicos-header .section-desc {
-  margin: 16px auto 0;
-}
-
-.servicos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.servico-card {
-  background: var(--dark);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-  padding: 36px 28px;
-  position: relative;
-  overflow: hidden;
-  cursor: default;
-  transition: all var(--transition);
-}
-
-.servico-card::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--yellow);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition);
-}
-
-.servico-card:hover {
-  border-color: rgba(255, 193, 7, 0.3);
-  transform: translateY(-6px);
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
-  background: var(--dark2);
-}
-
-.servico-card:hover::before {
-  transform: scaleX(1);
-}
-
-.servico-icon {
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 193, 7, 0.12);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 22px;
-  transition: background var(--transition);
-}
-
-.servico-card:hover .servico-icon {
-  background: rgba(255, 193, 7, 0.22);
-}
-
-.servico-icon i {
-  font-size: 1.5rem;
-  color: var(--yellow);
-}
-
-.servico-card h3 {
-  font-weight: 700;
-  font-size: 1.05rem;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.servico-card p {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.7;
-}
-
-.servico-num {
-  position: absolute;
-  top: 20px;
-  right: 22px;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 3.5rem;
-  color: rgba(255, 193, 7, 0.06);
-  line-height: 1;
-  transition: color var(--transition);
-}
-
-.servico-card:hover .servico-num {
-  color: rgba(255, 193, 7, 0.12);
-}
-
-/* ── 9. GALERIA ── */
+/* ── 8. GALERIA ── */
 #galeria {
   background: var(--dark);
   padding: 100px 5%;
@@ -759,6 +598,118 @@ section {
   text-align: center;
 }
 
+/* ── 9. SERVIÇOS ── */
+#servicos {
+  background: var(--black);
+}
+
+.servicos-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicos-header .section-desc {
+  margin: 16px auto 0;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-card {
+  background: var(--dark);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 36px 28px;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: all var(--transition);
+}
+
+.servico-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--yellow);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.servico-card:hover {
+  border-color: rgba(255, 193, 7, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+  background: var(--dark2);
+}
+
+.servico-card:hover::before {
+  transform: scaleX(1);
+}
+
+.servico-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 193, 7, 0.12);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  transition: background var(--transition);
+}
+
+.servico-card:hover .servico-icon {
+  background: rgba(255, 193, 7, 0.22);
+}
+
+.servico-icon i {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+.servico-card h3 {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.servico-card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+}
+
+.servico-num {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  color: rgba(255, 193, 7, 0.06);
+  line-height: 1;
+  transition: color var(--transition);
+}
+
+.servico-card:hover .servico-num {
+  color: rgba(255, 193, 7, 0.12);
+}
+
+
+
 /* ── 10. CONTATO ── */
 #contato {
   background: var(--black);
@@ -785,8 +736,8 @@ section {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 28px;
-  padding: 20px;
+  margin-bottom: 25px;
+  padding: 10px;
   background: var(--dark);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -828,50 +779,9 @@ section {
   line-height: 1.5;
 }
 
-.social-row {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.social-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 22px;
-  border-radius: var(--radius);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all var(--transition);
-}
-
-.social-btn.wa {
-  background: rgba(37, 211, 102, 0.15);
-  color: #25D366;
-  border: 1px solid rgba(37, 211, 102, 0.35);
-}
-
-.social-btn.wa:hover {
-  background: #25D366;
-  color: var(--white);
-}
-
-.social-btn.ig {
-  background: rgba(225, 48, 108, 0.12);
-  color: #e1306c;
-  border: 1px solid rgba(225, 48, 108, 0.3);
-}
-
-.social-btn.ig:hover {
-  background: #e1306c;
-  color: var(--white);
-}
-
 .map-container {
   border-radius: 16px;
+  margin-top: 60px;
   overflow: hidden;
   border: 2px solid rgba(255, 193, 7, 0.15);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
@@ -879,7 +789,7 @@ section {
 
 .map-container iframe {
   width: 100%;
-  height: 420px;
+  /* height: 420px; */
   display: block;
   filter: grayscale(40%) contrast(1.1);
 }
@@ -953,7 +863,14 @@ footer {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.45);
   line-height: 1.7;
-  max-width: 280px;
+  max-width: 290px;
+}
+
+.footer-brand img {
+  width: 250px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .footer-col h4 {
