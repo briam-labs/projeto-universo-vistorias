@@ -48,7 +48,7 @@ universo-vistorias/
 - ✅ Faixa marquee animada com diferenciais
 - ✅ Seção Sobre com cards informativos
 - ✅ Cards de Serviços com hover animado
-- ✅ Galeria em grid assimétrico
+- ✅ Operações em grid assimétrico
 - ✅ Seção de Contato com Google Maps
 - ✅ Botão flutuante de WhatsApp
 - ✅ Animações de scroll reveal
