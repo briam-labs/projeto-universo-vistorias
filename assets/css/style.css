@@ -1,22 +1,3 @@
-/* ============================================================
-  UNIVERSO VISTORIAS — style.css
-  Estrutura:
-  1. Variáveis & Reset
-  2. Scrollbar
-  3. Navbar
-  4. Mobile Menu
-  5. Hero Section
-  6. Seção Comum (labels, títulos)
-  7. Sobre
-  8. Galeria
-  9. Serviços
-  10. Contato
-  11. Faixa Credenciais
-  12. Footer
-  13. Floating WhatsApp
-  14. Animações & Reveal
-  15. Responsividade
-  ============================================================ */
 
 /* ── 1. VARIÁVEIS & RESET ── */
 :root {
@@ -497,8 +478,7 @@ section {
 
 .galeria-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 280px 280px;
+  grid-template-columns: repeat(2, 1fr); 
   gap: 16px;
   max-width: 1200px;
   margin: 0 auto;
@@ -509,10 +489,12 @@ section {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  height: 320px; 
 }
 
 .galeria-item:first-child {
-  grid-row: span 2;
+  grid-row: span 1;
+  grid-column: span 1;
 }
 
 .galeria-bg {
@@ -789,7 +771,6 @@ section {
 
 .map-container iframe {
   width: 100%;
-  /* height: 420px; */
   display: block;
   filter: grayscale(40%) contrast(1.1);
 }
